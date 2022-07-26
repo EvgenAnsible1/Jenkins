@@ -1,0 +1,4 @@
+---
+lighthouse_git: https://github.com/vkcom/lighthouse
+lighthouse_dir: /home/student/lighthouse
+nginx_user: root

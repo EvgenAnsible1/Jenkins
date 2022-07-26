@@ -1,0 +1,15 @@
+galaxy_info:
+  author: Evgeniy Smirnov
+  description: Vector install for homework
+  company: Netology student
+  role_name: vector_role
+ 
+  license: MIT
+
+  min_ansible_version: 2.1
+
+
+  galaxy_tags: [vector]
+  namespace: my_namespace
+dependencies: []
+

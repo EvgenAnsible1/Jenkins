@@ -1,0 +1,15 @@
+galaxy_info:
+  author: Evgeniy Smirnov
+  description: Lighthouse install for honework
+  company: Netology student
+
+  license: MIT
+
+  min_ansible_version: 2.1
+  
+  role_name: vector
+
+  galaxy_tags: [vector]
+
+dependencies: []
+
