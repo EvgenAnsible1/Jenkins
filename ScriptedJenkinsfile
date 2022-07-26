@@ -1,0 +1,17 @@
+node("ubuntu"){
+    stage("Git checkout"){
+        git branch: 'main', credentialsId: '8a4a0522-9255-45d3-b962-a12a7d0c80ee', url: 'git@github.com:EvgenAnsible1/Jenkins.git'
+    }
+    stage("check prod_run"){
+        prod_run=true
+    }
+    stage("Run playbook"){
+        if (prod_run){
+            sh 'ansible-playbook site.yml -i inventory/prod.yml'
+        }
+        else{
+            sh 'ansible-playbook --check --diff site.yml -i inventory/prod.yml'
+        }
+        
+    }
+}
